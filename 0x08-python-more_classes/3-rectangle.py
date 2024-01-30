@@ -70,6 +70,6 @@ class Rectangle:
         result = ""
         for i in range(self.__height):
             for j in range(self.__width):
-                result = result + "#"
-            result = result + "\n"
+                result += "#"
+            result += "\n"
         return result
