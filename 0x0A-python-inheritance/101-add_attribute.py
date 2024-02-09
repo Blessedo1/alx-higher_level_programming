@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+
+
 def add_attribute(obj, name, value):
     """adds a new attribute to the object if possible"""
     if hasattr(obj, '__dict__'):
