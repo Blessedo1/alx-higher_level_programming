@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Create a BaseGeometry class thata is inherited by class Rectangle"""
+"""Create a BaseGeometry class that is inherited by class Rectangle"""
+from 7-base_geometry import BaseGeometry
 
 
 class BaseGeometry:
