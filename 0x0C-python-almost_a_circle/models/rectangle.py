@@ -8,16 +8,19 @@ class Rectangle(Base):
 
     @staticmethod
     def int_validation(name, value):
+        """function that validates whether the value is an integer"""
         if type(value) is not int:
             raise TypeError("{} must be an integer".format(name))
 
     @staticmethod
     def positive_validation(name, value):
+        """function that validates whether the value is greater than 0"""
         if value <= 0:
             raise ValueError("{} must be > 0".format(name))
 
     @staticmethod
     def positive_coord_validation(name, value):
+        """function checks whether the value is greater than or equals 0"""
         if value < 0:
             raise ValueError("{} must be >= 0".format(name))
 
