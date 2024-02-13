@@ -6,7 +6,6 @@ from models.base import Base
 class Rectangle(Base):
     """Define a class Rectangle with methods"""
 
-
     @staticmethod
     def int_validation(name, value):
         """function that validates whether the value is an integer"""
@@ -27,7 +26,6 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """Initialize the Rectangle class object
-        
         Args:
             width (int): The width of the new Rectangle.
             height (int): The height of the new Rectangle.
@@ -153,3 +151,13 @@ class Rectangle(Base):
     def __str__(self):
         return f"[Rectangle] ({self.id})\
  {self.x}/{self.y} - {self.width}/{self.height}"
+
+    def to_dictionary(self):
+        """Returns the dictionary representation of a Rectangle"""
+        return {
+            "id": self.id,
+            "width": self.width,
+            "height": self.height,
+            "x": self.x,
+            "y": self.y
+        }

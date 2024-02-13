@@ -50,3 +50,11 @@ class Square(Rectangle):
                     self.y = j
                 elif i == 'id':
                     self.id = j
+
+    def to_dictionary(self):
+        return {
+            "id": self.id,
+            "size": self.width,
+            "x": self.x,
+            "y": self.y
+        }
