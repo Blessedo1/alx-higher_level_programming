@@ -42,6 +42,3 @@ class Base:
             return []
         else:
             return list(json.loads(json_string))
-
-
-
