@@ -8,6 +8,8 @@ class Square(Rectangle):
 
     def __init__(self, size, x=0, y=0, id=None):
         """Initialization of the class instance"""
+        width = size
+        height = size
         super().__init__(width, height, x, y, id)
 
     def __str__(self):
