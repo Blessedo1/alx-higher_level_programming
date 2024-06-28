@@ -2,5 +2,7 @@
 -- the result column name should be 'average'
 -- The database name will be passed as an argument of the mysql command
 
+ALTER TABLE second_table
+ADD average INT
 INSERT INTO second_table (average)
 	SELECT AVG(score) FROM second_table
