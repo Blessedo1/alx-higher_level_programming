@@ -2,7 +2,4 @@
 -- the result column name should be 'average'
 -- The database name will be passed as an argument of the mysql command
 
-ALTER TABLE second_table
-ADD COLUMN average FLOAT;
-UPDATE second_table
-SET average = SELECT AVG(score) FROM second_table
+SELECT AVG(score) AS average FROM second_table
