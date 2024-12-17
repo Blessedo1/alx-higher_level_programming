@@ -1,0 +1,29 @@
+#!/usr/bin/node
+
+const args = process.argv.slice(2);
+
+if (args.length < 2) {
+  console.log(0);
+} else {
+  let first = Number(args[0]);
+  let second = Number(args[1]);
+
+  if (first === second) {
+    console.log(0);
+  } else {
+    for (let i = 2; i < args.length; i++) {
+      let current = Number(args[i]);
+      if (current > first) {
+        second = first;
+        first = current;
+      } else if (current > second && current !== first) {
+        second = current;
+      }
+    }
+    if (second === Number(args[1]) || second === first) {
+      console.log(0);
+    } else {
+      console.log(second);
+    }
+  }
+}
