@@ -16,7 +16,7 @@ if (args.length < 2) {
       if (current > first) {
         second = first;
         first = current;
-      } else if (current > second && current !== first) {
+      } else if (current > second && current < first) {
         second = current;
       }
     }
