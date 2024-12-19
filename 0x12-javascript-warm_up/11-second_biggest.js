@@ -11,8 +11,8 @@ if (args.length < 2) {
   if (first === second) {
     console.log(0);
   } else {
-    for (let i = 2; i < args.length; i++) {
-      let current = Number(args[i]);
+    for (let i = 0; i < args.length; i++) {
+      const current = Number(args[i]);
       if (current > first) {
         second = first;
         first = current;
