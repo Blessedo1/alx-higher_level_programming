@@ -20,10 +20,6 @@ if (args.length < 2) {
         second = current;
       }
     }
-    if (second === Number(args[1]) || second === first) {
-      console.log(0);
-    } else {
-      console.log(second);
-    }
+    console.log(second);
   }
 }
