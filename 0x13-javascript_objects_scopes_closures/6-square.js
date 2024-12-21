@@ -1,7 +1,7 @@
 #!/usr/bin/node
 const SquareP = require('./5-square');
 
-class Square extends Rectangle {
+class Square extends SquareP {
   constructor (size) {
     super(size, size);
   }
