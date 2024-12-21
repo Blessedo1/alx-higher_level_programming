@@ -20,13 +20,12 @@ class Rectangle {
   }
 
   rotate () {
-    
     const temporal = this.width;
     this.width = this.height;
-    this. height = temporal;
+    this.height = temporal;
   }
 
-  double() {
+  double () {
     this.width = this.width * 2;
     this.height = this.height * 2;
   }
